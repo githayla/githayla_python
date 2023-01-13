@@ -1,0 +1,85 @@
+print('''
+
+      Welcome into your next adventure: Life!
+      
+''')
+print(''' You are in your 20's and decide you need some change. ''')
+decision = input('''
+                 You just graduated and Germany looks like a good way to go. 
+                 Would you like to go to Germany? Y or N ''')
+
+if decision == "Y" or decision == "y":
+  print('''
+Brave choice! Your are now inside of the flight, soon you will be in the Potato and Beer Country!
+        
+        \..,.-
+                 .\   |         __
+                 .|    .-     /  .;
+           _      _|      \__/..     \
+          \ ...\|   X Hamburg        :_
+           |                           \
+          /                            /
+         -.                           |
+          \  X Rheine      Berlin X    \
+       __/                              |
+      |                                 /
+      |                                 \
+     /                                   |
+     \     X Cologne        Dresden  X . ,
+      \                            ._-. .
+     /                        __.-/
+     |         X Frankfurt    \
+      \                        \
+       \                        \
+        ...,.                    \
+            /                     \.
+           /                       ,.
+          /                      ./
+         |         Munich X     |
+         \,......,__  __,  __.-. .
+                    \/   -/     ..
+        
+''')
+else:
+  print("Staying home is also a brave decision! I wish you good fortune in your path!")
+
+visum = input('''
+Now you just arrived into the airport. Your next step is to the passport control. Do you have a Visum to show? Y or N
+''')
+visum = visum.lower()
+
+if visum == "y" or visum == "Y":
+  print('''
+      Nice. You are prepared to the country of bureaucracy... but there is still a long way to go
+        ''')
+  german = input("The next big step is... to search an appartment in Germany to call home. Interviews and visits to the apartments are necessary, and for that you have to talk with the owners. Do you speak german? Y or N ")
+  if german == "Y" or german == "y":
+    keep_searching = input("Nice! This was truly helpful! Unfortunately, when you said you are an Ausländer, you got a no. This is sad, but do you want to keep searching? Y or N ")
+    if keep_searching == "y" or keep_searching == "Y":
+      print('''
+            You are a lucky person and found an apartment! This is nice! Now to grow your life in this new country would be nice to meet some new people!
+  ''')
+      new_people = input("Would you like to try to make friends in Germany? Y or N ")
+      if new_people == "y" or new_people == "Y":
+        print('''
+              Unfortunately the skill of making friends in Germany is blocked 😢 But your life keeps going! Now some time has gone by, you need to renew your Visum in order to stay legaly in the country. ''')
+        renew_visum = input("Do you want to make a termin by the Ausländerbehörder? Y or N. ")
+        if renew_visum == "y" or renew_visum == "Y":
+            print("Nice! You make everything corrects. Luck in you path, you may stay in Germany if you keep like this. 🤩")
+        else:
+          print("Staying in the country without a visum is not allowed. You are sent back to your country! Game over 😢")
+      else: 
+        print('''
+            You are smart and now that making friends in Germany is not so possible. Keep your life as it is and luck in you path!''')
+    else:
+      print('''
+You were brave in your adventure, but without a house you cannot stay in the country. Its better to come back. Game over 😢.            
+''')
+  else:
+    print('''
+          You visit many apartments, but people look mostly unable to speak your language. Sometimes you hear the owners saying something like 'scheisse Ausländer' but you are unsure of the meaning. Anyway it looks like a no and without a house you have to come back. Game over 😢
+''')
+else:
+   print('''
+         Oh no! If your country allow to be a Tourist in Germany, you can stay for some months, but then you have to go back to your country. Otherwise the police will send you directly from the airport home. Sorry! Game over. 😢
+''')
